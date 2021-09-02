@@ -1,0 +1,32 @@
+.search-bar{
+    margin: 20px;
+    padding: 15px;
+    height: 5vh;
+    flex: 1;
+    background-color: white;
+    box-shadow: -1px 5px 20px -6px rgb(0,0,0,0.75);
+}
+
+.search-bar__form{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.search-bar__form > label{
+    font-size: large;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+.search-bar__form > input{
+    flex: 1;
+    padding: 12px 20px;
+    font-size: larger;
+    height: 100%;
+    border-radius: 50px;
+}
+
+.search-bar__form > input:focus{
+    background-color: lightblue;
+}
