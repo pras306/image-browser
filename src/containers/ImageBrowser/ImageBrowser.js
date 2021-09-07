@@ -3,8 +3,7 @@ import React from 'react';
 import './ImageBrowser.css';
 import SearchBar from '../../components/SearchBar/SearchBar';
 import ImageList from '../../components/ImageList/ImageList';
-import { UNSPLASH_API } from '../../apis/axios';
-import requests from '../../apis/requests';
+import { PROXY_UNSPLASH_API } from '../../apis/requests';
 
 class ImageBrowser extends React.Component {
 
@@ -13,14 +12,9 @@ class ImageBrowser extends React.Component {
     }
     
     onSearchSubmit = async (term) => {        
-        let response = await UNSPLASH_API.get(requests.getImages,{
-            params: {
-                query: term,
-                per_page: 30
-            }
-        });
-            
-        this.setState({ images: response.data.results });
+        let response = await PROXY_UNSPLASH_API.get(term);
+        
+        this.setState({ images: response.data });
     }
 
     render() {

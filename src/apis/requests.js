@@ -1,5 +1,5 @@
-const requests = {
-    getImages: "/search/photos"
-};
+import axios from "axios";
 
-export default requests;
+export const PROXY_UNSPLASH_API = axios.create({
+    baseURL: "https://backend-portfolio-proxy.herokuapp.com/api/v1/images/search/"
+});
