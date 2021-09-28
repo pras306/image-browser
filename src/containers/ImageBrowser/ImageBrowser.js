@@ -12,9 +12,17 @@ class ImageBrowser extends React.Component {
     }
     
     onSearchSubmit = async (term) => {        
-        let response = await PROXY_UNSPLASH_API.get(term);
-        
-        this.setState({ images: response.data });
+        try {
+            let response = await PROXY_UNSPLASH_API.get(term);
+
+            if(response.data.length <=0 || response.data.Error ) {
+                throw new Error("Search returned no results.");
+            }
+            
+            this.setState({ images: response.data });
+        } catch (err) {
+            alert(err.message);
+        }
     }
 
     render() {
