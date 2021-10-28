@@ -8,7 +8,7 @@
 
 - [Description](#description)
 - [How To Use](#how-to-use)
-- [API References](#references)
+- [API References](#api-references)
 - [License](#license)
 - [Author Info](#author-info)
 
