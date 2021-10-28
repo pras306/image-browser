@@ -56,7 +56,7 @@ Start the server
 
 ---
 
-#### API Reference
+## API References
 
 - [Unsplash API](https://unsplash.com/)
 - [Custom Proxy Server for hiding API key](https://backend-portfolio-proxy.herokuapp.com)
