@@ -59,12 +59,12 @@ Start the server
 ## API References
 
 - [Unsplash API](https://unsplash.com/)
-- [Custom Proxy Server for hiding API key](https://backend-portfolio-proxy.herokuapp.com)
+- Custom Proxy Server for hiding API key - [https://backend-portfolio-proxy.herokuapp.com/api/v1](https://backend-portfolio-proxy.herokuapp.com/api/v1)
 
 #### Get images
 
 ```http
-  GET /api/v1/images/search/${term}
+  GET /images/search/${term}
 ```
 
 | Parameter   | Type     | Description                                       |
