@@ -59,7 +59,7 @@ Start the server
 ## API References
 
 - [Unsplash API](https://unsplash.com/)
-- Custom Proxy Server for hiding API key - [https://api-proxy-server.up.railway.app/api/v1](https://api-proxy-server.up.railway.app/api/v1)
+- Custom Proxy Server for hiding API key - [https://api-proxy-server-6xbe.onrender.com/api/v1](https://api-proxy-server-6xbe.onrender.com/api/v1)
 
 #### Get images
 
